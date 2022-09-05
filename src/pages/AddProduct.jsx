@@ -63,7 +63,7 @@ export default function AddProduct() {
       // Insert category data
       const response = await API.post("/product", formData, config);
       console.log(response);
-      navigate("/transaction");
+      // navigate("/transaction");
     } catch (error) {
       console.log(error);
     }
