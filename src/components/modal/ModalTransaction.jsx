@@ -21,6 +21,7 @@ export default function ModalTransaction({ showTrans, close, id }) {
       .catch((err) => console.log("error", err));
   });
 
+  console.log(transaction);
   return (
     <Modal show={showTrans} onHide={close} className="modal-transaction">
       <div className="profileCard">
