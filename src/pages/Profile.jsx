@@ -47,11 +47,7 @@ export default function Profile() {
 
           <div className="biodata">
             <img
-              src={
-                Profile?.image === "http://localhost:5000/uploads/"
-                  ? PhotoProfile
-                  : Profile?.image
-              }
+              src={Profile?.image === "" ? PhotoProfile : Profile?.image}
               alt="Profile"
             />
             <ul>
@@ -77,12 +73,7 @@ export default function Profile() {
               <div className="contentCardLeft">
                 {item?.carts?.map((cart, idx) => (
                   <div className="mapContent" key={idx}>
-                    <img
-                      src={
-                        "http://localhost:5000/uploads/" + cart?.product?.image
-                      }
-                      alt="coffee"
-                    />
+                    <img src={cart?.product?.image} alt="coffee" />
                     <ul>
                       <li className="profileCardTitle">
                         {cart?.product?.title}

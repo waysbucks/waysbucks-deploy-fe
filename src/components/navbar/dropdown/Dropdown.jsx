@@ -40,11 +40,7 @@ export default function Dropdown() {
     <NavDropdown
       title={
         <img
-          src={
-            photo?.image === "http://localhost:5000/uploads/"
-              ? PhotoProfile
-              : photo?.image
-          }
+          src={photo?.image === "" ? PhotoProfile : photo?.image}
           alt="photoProfile"
           className="navbarPhoto"
         />

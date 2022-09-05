@@ -27,10 +27,7 @@ export default function ModalTransaction({ showTrans, close, id }) {
         <div className="contentCardLeft">
           {transaction?.carts?.map((item, index) => (
             <div className="mapContent" key={index}>
-              <img
-                src={"http://localhost:5000/uploads/" + item.product.image}
-                alt="coffee"
-              />
+              <img src={item.product.image} alt="coffee" />
               <ul>
                 <li className="profileCardTitle">{item.title}</li>
                 <li className="profileCardDate">
